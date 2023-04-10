@@ -2,6 +2,7 @@ import React from "react"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import How from "./components/How"
+import Featured from "./components/Featured"
 
 function App() {
 
@@ -17,11 +18,15 @@ function App() {
     <section className="section-hero">
       <Hero />
     </section> 
-    </main>
+
+    <section className="section-featured">
+      <Featured />
+    </section>
 
     <section className="section-how">
       <How />
     </section>
+    </main>
    </React.Fragment>
   )
 }
