@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import How from "./components/How"
 import Featured from "./components/Featured"
+import Meals from "./components/Meals"
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
 
     <section className="section-how">
       <How />
+    </section>
+    
+    <section className="section-meals">
+      <Meals />
     </section>
     </main>
    </React.Fragment>
