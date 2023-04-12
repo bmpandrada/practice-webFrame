@@ -7,14 +7,14 @@ import img4 from '../assets/img/unsorted-img/20221129_103601.jpg'
 const Meals = () => {
   return (
     <React.Fragment>
-        <div className="container">
+        <div className="container center-text">
         <span className="sub-heading">Dark Chocolate Bar</span>
         <h2 className="heading-secondary">
           Cacao De lilio chooses from 3 recipes
         </h2>
       </div>
 
-      <div className="container grid grid--3-cols">
+      <div className="container grid grid--3-cols margin-bottom-md">
             <div className="meal">
                 <img className='meal-img' src={img1} alt="" />
                 <div className="meal-content">
@@ -56,7 +56,41 @@ const Meals = () => {
                 </ul>
                 </div>
             </div>
-            <div className="list">Diet</div>
+            <div className="diets">
+              <h3 className="heading-tertiary">Works with any diet:</h3>
+              <ul className="list">
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Vegetarian</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Vegan</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Pescatarian</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span> Gluten-free</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Lactose-free</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span> Keto</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Paleo</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Low FODMAP</span>
+                  </li>
+                  <li className='list-item'>
+                  <ion-icon name="checkmark-outline"></ion-icon><span>Kid-friendly</span>
+                  </li>
+              </ul>
+            </div>
+      </div>
+      <div className="container all-recipes">
+          <a href="#" className="link">See all Recipes &rarr;</a>
       </div>
     </React.Fragment>
   )

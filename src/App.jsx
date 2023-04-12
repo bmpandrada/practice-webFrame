@@ -4,6 +4,10 @@ import Navbar from "./components/Navbar"
 import How from "./components/How"
 import Featured from "./components/Featured"
 import Meals from "./components/Meals"
+import Testimonials from "./components/Testimonials"
+import Pricing from "./components/Pricing"
+import CTA from "./components/CTA"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -26,12 +30,25 @@ function App() {
 
     <section className="section-how">
       <How />
-    </section>
+    </section> 
     
     <section className="section-meals">
       <Meals />
     </section>
+
+    <section className="section-testimonials">
+      <Testimonials />
+    </section>
+
+    <section className="section-pricing">
+      <Pricing />
+    </section>
+
+    <section className="section-cta">
+      <CTA />
+    </section>
     </main>
+    <Footer />
    </React.Fragment>
   )
 }

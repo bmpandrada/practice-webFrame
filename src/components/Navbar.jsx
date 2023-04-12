@@ -4,14 +4,16 @@ import logo from '../assets/img/CACAO-DE-LILIO-logo.png'
 const Navbar = () => {
   return (
     <React.Fragment>
-    <img className="logo" src={logo} alt="logo" />
+      <a href="#">
+      <img className="logo" src={logo} alt="logo" />
+      </a>
       <nav className="main-nav">
         <ul className="main-nav-list">
-            <li><a className="main-nav-link" href="#">Section 1</a></li>
-            <li><a className="main-nav-link" href="#">Section 2</a></li>
-            <li><a className="main-nav-link" href="#">Section 3</a></li>
-            <li><a className="main-nav-link" href="#">Section 4</a></li>
-            <li><a className="main-nav-link nav-cta" href="#">Section 5</a></li>
+            <li><a className="main-nav-link" href="#">How it works</a></li>
+            <li><a className="main-nav-link" href="#">Meals</a></li>
+            <li><a className="main-nav-link" href="#">Testimonials</a></li>
+            <li><a className="main-nav-link" href="#">Pricing</a></li>
+            <li><a className="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
     </React.Fragment>
