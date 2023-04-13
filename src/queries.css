@@ -1,0 +1,85 @@
+/* font size (px)
+10/12/14/16/18/20/24/30/36/
+44/52/62/74/86/98 */
+
+
+/* 84*16 = 1344px */
+@media (max-width:84em){
+.container{
+  max-width: 120rem;
+}
+.heading-primary{
+    font-size: 4.4rem;
+}
+.gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* 84*16 = 1202px tablet */
+
+/* 9/16 = 56.25% */
+@media (max-width:75em){
+html{
+font-size: 56.25%;
+}
+.header{
+    padding: 1rem 3.2rem 0 3.2rem;
+}
+.grid{
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+}
+.hero{
+    gap: 4.8rem;
+}
+.heading-secondary{
+    font-size: 3.6rem;
+}
+.heading-tertiary{
+    font-size: 2.4rem;
+}
+
+.main-nav-list{
+    gap: 3.2rem;
+}
+.testimonial-container{
+    padding: 9.6rem 3.2rem;
+  }
+}
+/* 944px for tablet */
+@media(max-width:59em){
+    html{
+        font-size: 50%;
+    }
+ .hero{
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+ }   
+.hero-img{
+    width: 60%;
+}
+.hero-text-box,
+.hero-image-box{
+ text-align: center;
+}
+.delivery-meals{
+    justify-content: center;
+}
+.step-number{
+    font-size: 7.4rem;
+}
+.meal-content{
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+.section-testimonials{
+    grid-template-columns: 1fr;
+  }
+.gallery-item > img {
+    width: 100%;
+    height: 200px;
+}
+.gallery{
+    grid-template-columns: repeat(6, 1fr);
+}
+}

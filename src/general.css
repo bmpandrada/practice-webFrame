@@ -34,7 +34,8 @@ letter feSpecularLighting
 
 
 html{
-  font-size: 10px;
+  /* font-size: 10px; */
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }  
 
