@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../assets/img/CACAO-DE-LILIO-logo.png'
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(true)
   const handleChange = () => {
     setOpen(!isOpen)
   }
