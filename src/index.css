@@ -14,7 +14,7 @@
 }
 .btn-mobile-nav{
   border: none;
-  background-color: none;
+  background-color: transparent;
   cursor: pointer;
 
   display: none;
