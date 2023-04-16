@@ -13,12 +13,7 @@ function App() {
 
   return (
    <React.Fragment>
-    <header className="header"> 
-    <React.Fragment> 
-      <Navbar />
-    </React.Fragment>
-    </header>
-    
+      <Navbar /> 
     <main>
     <section className="section-hero">
       <Hero />
