@@ -1,8 +1,8 @@
 import React from 'react'
-import img1 from '../assets/img/unsorted-img/20221108_223733.jpg'
-import img2 from '../assets/img/unsorted-img/20221108_225258.jpg'
+import img1 from '../assets/img/unsorted-img/20221108_22373.jpg'
+
 import img3 from '../assets/img/unsorted-img/20221108_225342.jpg'
-import img4 from '../assets/img/unsorted-img/20221129_103601.jpg'
+
 
 const Meals = () => {
   return (
