@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import logo from '../assets/img/CACAO-DE-LILIO-logo.png'
-import { animateScroll } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(true)
   // const allLinks = document.querySelectorAll('a:link');
 
- 
+
+
   function handleChange(e) {
     setOpen(!isOpen);
     e.preventDefault();
