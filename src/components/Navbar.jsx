@@ -1,11 +1,26 @@
 import React, { useState } from 'react'
 import logo from '../assets/img/CACAO-DE-LILIO-logo.png'
+import { animateScroll } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(true)
-  const handleChange = () => {
-    setOpen(!isOpen)
+  // const allLinks = document.querySelectorAll('a:link');
+
+ 
+  function handleChange(event) {
+    setOpen(!isOpen);
+    event.preventDefault(); // prevent default link behavior
+    
+    const targetId = event.target.getAttribute("href").slice(1); // get the id of the target element
+    const targetElement = document.getElementById(targetId); // find the target element
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" }); // scroll to the target element smoothly
+    }
   }
+  
+
+
   return (
     <header className={`${isOpen ? "header":"header nav-open"}`}> 
       <a href="#">
@@ -13,11 +28,11 @@ const Navbar = () => {
       </a>
       <nav className="main-nav">
         <ul className="main-nav-list">
-            <li><a  onClick={handleChange} className="main-nav-link" href="#">How it works</a></li>
-            <li><a  onClick={handleChange} className="main-nav-link" href="#">Meals</a></li>
-            <li><a  onClick={handleChange} className="main-nav-link" href="#">Testimonials</a></li>
-            <li><a  onClick={handleChange} className="main-nav-link" href="#">Pricing</a></li>
-            <li><a  onClick={handleChange} className="main-nav-link nav-cta" href="#">Try for free</a></li>
+            <li><a  onClick={handleChange} className="main-nav-link" href="#how">How it works</a></li>
+            <li><a  onClick={handleChange} className="main-nav-link" href="#meals">Meals</a></li>
+            <li><a  onClick={handleChange} className="main-nav-link" href="#testimonials">Testimonials</a></li>
+            <li><a  onClick={handleChange} className="main-nav-link" href="#pricing">Pricing</a></li>
+            <li><a  onClick={handleChange} className="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
       <button onClick={handleChange} className="btn-mobile-nav mobile-icon">

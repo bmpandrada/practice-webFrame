@@ -23,23 +23,23 @@ function App() {
       <Featured />
     </section>
 
-    <section className="section-how">
+    <section className="section-how" id="how">
       <How />
     </section> 
     
-    <section className="section-meals">
+    <section className="section-meals" id="meals">
       <Meals />
     </section>
 
-    <section className="section-testimonials">
+    <section className="section-testimonials" id="testimonials">
       <Testimonials />
     </section>
 
-    <section className="section-pricing">
+    <section className="section-pricing" id="pricing">
       <Pricing />
     </section>
 
-    <section className="section-cta">
+    <section className="section-cta" id="cta">
       <CTA />
     </section>
     </main>
