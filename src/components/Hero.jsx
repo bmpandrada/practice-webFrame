@@ -18,6 +18,9 @@ const Hero = () => {
       if(ent.isIntersecting === false){
         document.body.classList.add('sticky')
       }
+      if(ent.isIntersecting === true){
+        document.body.classList.remove('sticky')
+      }
     }, {
       root: null,
       threshold: 0,
@@ -29,7 +32,7 @@ const Hero = () => {
     return () => {
       obs.unobserve(sectionHero);
     };
-  }, []);
+  }, [sectionHeroRef]);
   return (
     <div className="hero"  ref={sectionHeroRef}>
       <div className="hero-text-box">
