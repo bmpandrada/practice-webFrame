@@ -7,11 +7,10 @@ const Navbar = () => {
   // const allLinks = document.querySelectorAll('a:link');
 
  
-  function handleChange(event) {
+  function handleChange(e) {
     setOpen(!isOpen);
-    event.preventDefault(); // prevent default link behavior
-    
-    const targetId = event.target.getAttribute("href").slice(1); // get the id of the target element
+    e.preventDefault();
+    const targetId = e.target.getAttribute("href").slice(1); // get the id of the target element
     const targetElement = document.getElementById(targetId); // find the target element
     
     if (targetElement) {

@@ -12,7 +12,7 @@ const Hero = () => {
            tempora amet animi ipsum sequi pariatur quas culpa doloribus,
            eius accusantium perferendis reiciendis officiis.
         </p>
-        <a className="btn btn--full margin-right-sm" href="">Start eating well</a>
+        <a className="btn btn--full margin-right-sm" href="#how">Start eating well</a>
         <a className="btn btn--outline" href="#meals">Learn more &darr;</a>
       </div>
       <div className="hero-image-box">
