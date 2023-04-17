@@ -132,12 +132,12 @@ font-size: 56.25%;
 .main-nav-link:visited{
   font-size: 3rem;
 }
-.nav-open .mobile-icon ion-icon[name='close-outline']{
+/* .nav-open .mobile-icon ion-icon[name="close-outline"]{
 display: block;
 }
 .nav-open .mobile-icon ion-icon[name='menu-outline']{
 display: none;
-}
+} */
 .gallery-item > img{
     width: 140px;
     height: 140px;

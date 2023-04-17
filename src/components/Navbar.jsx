@@ -21,8 +21,8 @@ const Navbar = () => {
         </ul>
       </nav>
       <button onClick={handleChange} className="btn-mobile-nav mobile-icon">
-      <ion-icon name="menu-outline"></ion-icon>
-      <ion-icon name="close-outline"></ion-icon>
+    {isOpen ? <ion-icon name="menu-outline"></ion-icon>: <ion-icon name="close-outline"></ion-icon>}  
+     
       </button>
       
     </header>
