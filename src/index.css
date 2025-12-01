@@ -1,9 +1,8 @@
-
 /* *************************** Header page ******************** */
-.logo{
+.logo {
   height: 7rem;
 }
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,30 +11,30 @@
   padding: 0 4.8rem 0 4.8rem;
   position: relative;
 }
-.btn-mobile-nav{
+.btn-mobile-nav {
   border: none;
   background-color: transparent;
   cursor: pointer;
 
   display: none;
 }
-.mobile-icon ion-icon{
+.mobile-icon ion-icon {
   height: 4.8rem;
   width: 4.8rem;
   color: #333;
-} v
-.mobile-icon ion-icon[name='close-outline']{
+}
+v .mobile-icon ion-icon[name="close-outline"] {
   display: none;
 }
 
-.main-nav-list{
+.main-nav-list {
   list-style: none;
   display: flex;
   gap: 4.8rem;
   align-items: center;
 }
 .main-nav-link:link,
-.main-nav-link:visited{
+.main-nav-link:visited {
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -44,12 +43,12 @@
   display: inline-block;
 }
 .main-nav-link:hover,
-.main-nav-link:active{
+.main-nav-link:active {
   color: #cf711f;
 }
 /* to make sure implemented the nav-cta .main-nav-link.nav-cta*/
 .main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited{
+.main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
@@ -57,12 +56,12 @@
 }
 
 .main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active{
+.main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
 
 /* *************************** sticky page ******************** */
-.sticky .header{
+.sticky .header {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -75,16 +74,16 @@
 }
 
 /* *************************** Hero page ******************** */
-.sticky .section-hero{
+.sticky .section-hero {
   padding-top: 9.6rem;
-} 
+}
 
-.section-hero{
+.section-hero {
   background-color: #fdf2e9;
   padding: 0 0 9.6rem 0;
 }
 
-.hero{
+.hero {
   max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
@@ -94,20 +93,20 @@
   gap: 9.6rem;
 }
 
-.hero-description{
+.hero-description {
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
 }
 
-.hero-img{
+.hero-img {
   width: 100%;
 }
 /* *************************** Featured page ******************** */
-.section-featured{
+.section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
-.heading-featured-in{
+.heading-featured-in {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
@@ -116,34 +115,34 @@
   margin-bottom: 2.4rem;
   color: #888;
 }
-.logos{
+.logos {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
-.logos img{
+.logos img {
   height: 14.2rem;
   filter: brightness(0);
   opacity: 50%;
 }
 /* *************************** How page ******************** */
 
-.section-how{
+.section-how {
   padding: 9.6rem 0;
 }
-.step-img-box{
+.step-img-box {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 7;
 }
-.step-img{
+.step-img {
   width: 40%;
   border-radius: 5px;
 }
 .step-img-box::before,
-.step-img-box::after{
-  content: '';
+.step-img-box::after {
+  content: "";
   display: block;
   border-radius: 50%;
   /* height: 60%; */
@@ -151,195 +150,193 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- 
 }
-.step-img-box::before{
+.step-img-box::before {
   width: 65%;
   padding-bottom: 60%;
   background-color: #fdf2e9;
   z-index: -2;
 }
-.step-img-box::after{
+.step-img-box::after {
   width: 55%;
   padding-bottom: 50%;
   background-color: #fae5d3;
   z-index: -1;
 }
 
-.step-number{
+.step-number {
   font-size: 9.8rem;
   font-weight: 600;
   color: #ddd;
   margin-bottom: 1.2rem;
 }
-.step-description{
+.step-description {
   font-size: 1.6rem;
   line-height: 1.8;
 }
 
 /* *************************** Meals page ******************** */
-.meal{
-  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
 }
-.meal:hover{
+.meal:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
-.meal-content{
+.meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
-.section-meals{
+.section-meals {
   padding: 9.6rem 0;
-} 
-.meal-tags{
+}
+.meal-tags {
   margin-bottom: 12px;
   font-weight: 600;
   display: flex;
-  gap: .4rem;
-} 
-.tag{
+  gap: 0.4rem;
+}
+.tag {
   display: inline-block;
-  padding: .4rem .8rem;
+  padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  
+
   color: #333;
   border-radius: 100px;
 }
-.tag--veg{
+.tag--veg {
   background-color: #51cf66;
 }
-.tag--pal{
+.tag--pal {
   background-color: #ffd43b;
 }
-.meal-title{
+.meal-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
-.meal-img{
+.meal-img {
   width: 100%;
-} 
-ion-icon{
+}
+ion-icon {
   width: 2.4rem;
   height: 2.4rem;
   color: #e67e22;
-
 }
 
-.meal-attributes{
+.meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.meal-attribute{
+.meal-attribute {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.list-item ion-icon{
+.list-item ion-icon {
   width: 3rem;
   height: 3rem;
 }
-.all-recipes{
+.all-recipes {
   text-align: center;
   font-size: 1.8rem;
 }
 
 /* *************************** Testimonials page ******************** */
 
-.section-testimonials{
+.section-testimonials {
   display: grid;
   grid-template-columns: 55fr 45fr;
-  background-color:#fdf2e9;
+  background-color: #fdf2e9;
   align-items: center;
 }
-.testimonial-container{
+.testimonial-container {
   padding: 9.6rem;
 }
 
-.testimonials{
+.testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem;
 }
 
-.testimonial-img{
+.testimonial-img {
   height: 6.6rem;
   width: 6.6rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
 
-.testimonial-text{
+.testimonial-text {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
 
-.testimonial-name{
+.testimonial-name {
   font-size: 1.6rem;
   color: #6f6f6f;
 }
-.gallery{
+.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
-.gallery-item img{
+.gallery-item img {
   display: block;
   width: 100%;
-  /* height: 32rem; */
-  transition: all .4s;
+  height: 25rem;
+  transition: all 0.4s;
+  object-fit: cover;
 }
-.gallery-item{
+.gallery-item {
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
 }
-.gallery-item > img{
-  width: 280px;
-  height: 280px;
-}
-.gallery-item img:hover{
+
+.gallery-item img:hover {
   transform: scale(1.1);
 }
 
 /* *************************** Testimonials page ******************** */
 
-.section-pricing{
+.section-pricing {
   padding: 9.6rem 0;
 }
-.pricing-plan{
+.pricing-plan {
   border-radius: 11px;
   padding: 4.8rem;
   width: 75%;
 }
 
-.pricing-plan--starter{
+.pricing-plan--starter {
   justify-self: end;
-  border: .2rem solid #fdf2e9;
+  border: 0.2rem solid #fdf2e9;
   padding: 4.6rem;
 }
-.pricing-plan-complete{
+.pricing-plan-complete {
   background-color: #fdf2e9;
-  padding: 4.10rem;
+  padding: 4.1rem;
   position: relative;
   overflow: hidden;
 }
-.pricing-plan-complete::after{
-  content: 'Best Value';
+.pricing-plan-complete::after {
+  content: "Best Value";
   top: 5%;
   right: -9%;
-  padding: .8rem 3.2rem;
+  padding: 0.8rem 3.2rem;
   color: #333;
   transform: rotate(45deg);
   background-color: #ffd43b;
@@ -349,11 +346,11 @@ ion-icon{
   font-weight: 700;
 }
 
-.plan-header{
+.plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
 }
-.plan-name{
+.plan-name {
   color: #cf711f;
   font-weight: 600;
   font-size: 2rem;
@@ -361,33 +358,33 @@ ion-icon{
   letter-spacing: 0.75;
   margin-bottom: 3.2rem;
 }
-.plan-prince{
+.plan-prince {
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
 }
-.plan-text{
+.plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
 }
 
-.plan-prince span{
+.plan-prince span {
   font-size: 3rem;
   font-weight: 500;
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 }
-.plan-sign-up{
+.plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
 }
-.plan-details{
+.plan-details {
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
 }
-.feature ion-icon{
+.feature ion-icon {
   height: 3.2rem;
   width: 3.2rem;
   background-color: #fdf2e9;
@@ -395,23 +392,23 @@ ion-icon{
   border-radius: 50%;
   margin-bottom: 3.2rem;
 }
-.feature-title{
+.feature-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 700;
   margin-bottom: 1.6rem;
 }
-.feature-text{
+.feature-text {
   font-size: 1.8rem;
   line-height: 1.8rem;
 }
 
 /* *************************** CTA page ******************** */
 
-.section-cta{
+.section-cta {
   padding: 4.8rem 0 12.8rem 0;
 }
-.cta{
+.cta {
   overflow: hidden;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -422,46 +419,49 @@ ion-icon{
   background-image: linear-gradient(to left bottom, #eb984e, #e67e22);
 }
 
-.cta *:focus{
+.cta *:focus {
   outline: none;
   /* outline: 4px dotted #e67e22;
   outline-offset: 8px; */
-  box-shadow: 0 0 0 .8rem rgba(253, 242, 233, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
-.cta-text-box{
+.cta-text-box {
   color: #45260a;
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
 }
-.cta .heading-secondary{
+.cta .heading-secondary {
   color: #45260a;
   margin-bottom: 3.2rem;
 }
-.cta-text{
+.cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 4.8rem;
 }
 
-
-.cta-img-box{
-  background-image: linear-gradient(to left bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)),  
-  url('./assets/img/IMG_1151.jpg');
+.cta-img-box {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("./assets/img/IMG_1151.jpg");
   background-size: cover;
 }
-.cta-form{
+.cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
-.cta-form label{
+.cta-form label {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
 .cta-form input,
-.cta-form select{
+.cta-form select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -469,75 +469,75 @@ ion-icon{
   border: none;
   background-color: #fdf2e9;
   border-radius: 9px;
-  box-shadow:  0 1px 2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   color: inherit;
 }
-.cta-form input::placeholder{
-   color: #aaa;
+.cta-form input::placeholder {
+  color: #aaa;
 }
 
 /* *************************** Footer page ******************** */
-.footer{
+.footer {
   padding: 12.8rem 0;
   border-top: 1px solid #eee;
 }
-.grid-footer{
+.grid-footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
-.social-links{
+.social-links {
   list-style: none;
   display: flex;
   gap: 2.4rem;
 }
-.logo-col{
+.logo-col {
   display: flex;
   flex-direction: column;
 }
-.footer-logo{
+.footer-logo {
   display: block;
   margin-bottom: 3.2rem;
 }
 
-.footer-link, ion-icon{
+.footer-link,
+ion-icon {
   height: 2.4rem;
   width: 2.4rem;
   color: #767676;
 }
-.copyright{
+.copyright {
   font-size: 1.4rem;
   color: #767676;
   line-height: 1.6;
   margin-top: auto;
 }
-.footer-heading{
+.footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 4rem;
 }
-.contacts{
+.contacts {
   font-style: normal;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-.address{
+.address {
   margin-bottom: 2.4rem;
 }
-.footer-nav{
+.footer-nav {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
 .footer-link:link,
-.footer-link:visited{
+.footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
   color: #767676;
-  transition: all .3s;
-
+  transition: all 0.3s;
 }
 
 .footer-link:active,
-.footer-link:hover{
+.footer-link:hover {
   color: #555;
 }
